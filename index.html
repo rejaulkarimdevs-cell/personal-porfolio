@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rejaul Karim — Shopify Developer</title>
+    <meta
+      name="description"
+      content="Shopify developer with 2.5+ years of experience. Liquid, custom theme development, JavaScript, and CSS — focused on clean, maintainable, performance-first code."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header id="site-header">
+      <nav class="nav-inner">
+        <a class="nav-name" href="#hero">Rejaul Karim</a>
+        <button class="nav-hamburger" id="menuBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero">
+        <div class="container hero-grid">
+          <div class="hero-left">
+            <h1 class="hero-name">Rejaul Karim</h1>
+            <p class="hero-role">Shopify Developer</p>
+            <p class="hero-tagline">
+              I build fast, clean Shopify themes that just work.
+            </p>
+          </div>
+          <div class="hero-right">
+            <div class="code-block">
+              <div class="code-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="code-filename">featured-products.liquid</span>
+              </div>
+              <pre
+                class="code-body"
+              ><code><span class="t-comment">{%- comment -%} Featured products section {%- endcomment -%}</span>
+
+<span class="t-tag">{%</span> <span class="t-kw">assign</span> <span class="t-var">featured</span> = collection.products
+   | <span class="t-fn">where</span>: <span class="t-str">"available"</span>, <span class="t-kw">true</span> <span class="t-tag">%}</span>
+
+<span class="t-tag">{%</span> <span class="t-kw">for</span> <span class="t-var">product</span> <span class="t-kw">in</span> <span class="t-var">featured</span> <span class="t-fn">limit</span>: <span class="t-num">4</span> <span class="t-tag">%}</span>
+  <span class="t-html">&lt;div</span> <span class="t-attr">class</span>=<span class="t-str">"product-card"</span><span class="t-html">&gt;</span>
+    <span class="t-tag">{{</span> <span class="t-var">product</span>.title <span class="t-tag">}}</span>
+    <span class="t-tag">{{</span> <span class="t-var">product</span>.price | <span class="t-fn">money</span> <span class="t-tag">}}</span>
+  <span class="t-html">&lt;/div&gt;</span>
+<span class="t-tag">{%</span> <span class="t-kw">endfor</span> <span class="t-tag">%}</span><span class="cursor">|</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container about-grid">
+          <div class="about-img-wrap">
+            <img src="assets/images/me.png" alt="Rejaul Karim" />
+          </div>
+          <div class="about-inner">
+            <h2 class="section-label">About</h2>
+            <p class="about-bio">
+              I'm a Shopify developer with 2.5+ years of experience. I work with
+              Liquid, custom theme development, JavaScript, and CSS — focused on
+              clean, maintainable, performance-first code.
+            </p>
+            <div class="stack-row">
+              <span class="stack-tag">Liquid</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">CSS</span>
+              <span class="stack-tag">Shopify CLI</span>
+              <span class="stack-tag">GitHub</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work">
+        <div class="container">
+          <h2 class="section-label">Work</h2>
+          <div class="work-grid">
+            <div
+              class="work-card"
+              data-name="StyleHaus — Fashion Store"
+              data-result="+42% Conversion Rate"
+              data-img="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=800&q=80&fit=crop"
+            >
+              <div class="work-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80&fit=crop"
+                  alt="StyleHaus Fashion Store"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-info">
+                <span class="work-title">StyleHaus — Fashion Store</span>
+                <span class="work-tag">Store Setup</span>
+              </div>
+            </div>
+
+            <div
+              class="work-card"
+              data-name="GlowLab — Beauty Brand"
+              data-result="2x Subscription Revenue"
+              data-img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&h=800&q=80&fit=crop"
+            >
+              <div class="work-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80&fit=crop"
+                  alt="GlowLab Beauty Brand"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-info">
+                <span class="work-title">GlowLab — Beauty Brand</span>
+                <span class="work-tag">Custom Feature</span>
+              </div>
+            </div>
+
+            <div
+              class="work-card"
+              data-name="NestCo — Home &amp; Decor"
+              data-result="12K+ Products Migrated"
+              data-img="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&h=800&q=80&fit=crop"
+            >
+              <div class="work-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80&fit=crop"
+                  alt="NestCo Home Decor"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-info">
+                <span class="work-title">NestCo — Home &amp; Decor</span>
+                <span class="work-tag">Store Setup</span>
+              </div>
+            </div>
+
+            <div
+              class="work-card"
+              data-name="PureFlow — Wellness Brand"
+              data-result="+38% Lead Conversion"
+              data-img="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=800&q=80&fit=crop"
+            >
+              <div class="work-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&fit=crop"
+                  alt="PureFlow Wellness"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-info">
+                <span class="work-title">PureFlow — Wellness Brand</span>
+                <span class="work-tag">Landing Page</span>
+              </div>
+            </div>
+
+            <div
+              class="work-card"
+              data-name="Silky Planet — Product Page"
+              data-result="High-Converting PDP"
+              data-img="assets/images/pdp.jpg"
+            >
+              <div class="work-img-wrap">
+                <img
+                  src="assets/images/pdp.jpg"
+                  alt="Silky Planet Product Page"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-info">
+                <span class="work-title">Silky Planet — Product Page</span>
+                <span class="work-tag">PDP Design</span>
+              </div>
+            </div>
+
+            <div
+              class="work-card"
+              data-name="Valyrian Designs — Product Page"
+              data-result="High-Converting PDP"
+              data-img="assets/images/valeriyan-design.jpg"
+            >
+              <div class="work-img-wrap">
+                <img
+                  src="assets/images/valeriyan-design.jpg"
+                  alt="Valyrian Designs Product Page"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-info">
+                <span class="work-title">Valyrian Designs — Product Page</span>
+                <span class="work-tag">PDP Design</span>
+              </div>
+            </div>
+
+            <div
+              class="work-card"
+              data-name="Luxe Skincare — Product Page"
+              data-result="+29% Add-to-Cart Rate"
+              data-img="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=1200&h=800&q=80&fit=crop"
+            >
+              <div class="work-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=600&q=80&fit=crop"
+                  alt="Luxe Skincare"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-info">
+                <span class="work-title">Luxe Skincare — Product Page</span>
+                <span class="work-tag">PDP Design</span>
+              </div>
+            </div>
+
+            <div
+              class="work-card"
+              data-name="FitGear Pro — Fitness Store"
+              data-result="-45% Cart Abandonment"
+              data-img="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=800&q=80&fit=crop"
+            >
+              <div class="work-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80&fit=crop"
+                  alt="FitGear Pro"
+                  loading="lazy"
+                />
+              </div>
+              <div class="work-info">
+                <span class="work-title">FitGear Pro — Fitness Store</span>
+                <span class="work-tag">Custom Feature</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <h2 class="section-label">Contact</h2>
+            <p class="contact-tagline">Let's Connect</p>
+            <a class="contact-email" href="mailto:rejaulkarim.devs@gmail.com"
+              >rejaulkarim.devs@gmail.com</a
+            >
+            <div class="contact-links">
+              <a
+                href="https://github.com/rejaulkarimdevs-cell"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <span class="contact-sep">·</span>
+              <a
+                href="https://www.linkedin.com/in/rejaul-karim-988aa5404"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+              <span class="contact-sep">·</span>
+              <a
+                href="https://www.upwork.com/freelancers/rejaulkarim"
+                target="_blank"
+                rel="noopener"
+                >Upwork</a
+              >
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <input
+              type="hidden"
+              name="access_key"
+              value="9972a272-7894-4871-9c5a-625b57d82297"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New message from portfolio"
+            />
+            <input
+              type="checkbox"
+              name="botcheck"
+              style="display: none"
+              tabindex="-1"
+              autocomplete="off"
+            />
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                placeholder="you@email.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea
+                class="form-textarea"
+                name="message"
+                placeholder="Tell me about your project…"
+                required
+              ></textarea>
+            </div>
+            <button class="form-submit" type="submit" id="formSubmitBtn">
+              Send Message
+            </button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <span class="footer-logo">Rejaul Karim</span>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="assets/resume/Rejaul-Karim-Resume.pdf"
+            target="_blank"
+            rel="noopener"
+            >Resume</a
+          >
+        </div>
+        <span class="footer-copy">© 2026</span>
+      </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+      <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+      <div class="lb-backdrop" id="lbBackdrop"></div>
+      <div class="lb-content">
+        <img class="lb-img" id="lbImg" src="" alt="" />
+        <div class="lb-caption">
+          <p class="lb-name" id="lbName"></p>
+          <p class="lb-result" id="lbResult"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
