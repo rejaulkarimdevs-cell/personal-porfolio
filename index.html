@@ -14,7 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide-core.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide-core.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -57,7 +60,9 @@
                 <span class="dot green"></span>
                 <span class="code-filename">featured-products.liquid</span>
               </div>
-              <pre class="code-body"><code><span class="t-comment">{%- comment -%} Featured products section {%- endcomment -%}</span>
+              <pre
+                class="code-body"
+              ><code><span class="t-comment">{%- comment -%} Featured products section {%- endcomment -%}</span>
 
 <span class="t-tag">{%</span> <span class="t-kw">assign</span> <span class="t-var">featured</span> = collection.products
   | <span class="t-fn">where</span>: <span class="t-str">"available"</span>, <span class="t-kw">true</span> <span class="t-tag">%}</span>
@@ -276,17 +281,40 @@
       <section id="testimonials">
         <div class="container">
           <h2 class="section-label">Testimonials</h2>
-          <div class="splide" id="testimonialSlider" aria-label="Client testimonials">
+          <div
+            class="splide"
+            id="testimonialSlider"
+            aria-label="Client testimonials"
+          >
             <div class="splide__track">
               <ul class="splide__list">
-
                 <li class="splide__slide">
                   <div class="testi-card">
-                    <p class="testi-quote">"Rejaul completely transformed our Shopify store. The custom sections he built are fast, clean, and exactly what we needed. Highly recommend for any serious brand."</p>
+                    <p class="testi-quote">
+                      "Rejaul completely transformed our Shopify store. The
+                      custom sections he built are fast, clean, and exactly what
+                      we needed. Highly recommend for any serious brand."
+                    </p>
                     <div class="testi-author">
                       <div class="testi-avatar">S</div>
                       <div>
-                        <span class="testi-name">Sarah M. <svg class="testi-badge" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#1D9BF0"/><path d="M17.5 8.5L10.5 15.5L7 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="testi-name"
+                          >Sarah M.
+                          <svg
+                            class="testi-badge"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="12" fill="#1D9BF0" />
+                            <path
+                              d="M17.5 8.5L10.5 15.5L7 12"
+                              stroke="#fff"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                        ></span>
                         <span class="testi-country">🇺🇸 United States</span>
                       </div>
                     </div>
@@ -295,11 +323,31 @@
 
                 <li class="splide__slide">
                   <div class="testi-card">
-                    <p class="testi-quote">"Working with Rejaul was seamless. He understood our brand instantly and delivered a PDP that boosted our add-to-cart rate significantly. Really professional work."</p>
+                    <p class="testi-quote">
+                      "Working with Rejaul was seamless. He understood our brand
+                      instantly and delivered a PDP that boosted our add-to-cart
+                      rate significantly. Really professional work."
+                    </p>
                     <div class="testi-author">
                       <div class="testi-avatar">J</div>
                       <div>
-                        <span class="testi-name">James K. <svg class="testi-badge" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#1D9BF0"/><path d="M17.5 8.5L10.5 15.5L7 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="testi-name"
+                          >James K.
+                          <svg
+                            class="testi-badge"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="12" fill="#1D9BF0" />
+                            <path
+                              d="M17.5 8.5L10.5 15.5L7 12"
+                              stroke="#fff"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                        ></span>
                         <span class="testi-country">🇬🇧 United Kingdom</span>
                       </div>
                     </div>
@@ -308,11 +356,31 @@
 
                 <li class="splide__slide">
                   <div class="testi-card">
-                    <p class="testi-quote">"We had 12,000+ products to migrate and Rejaul handled it flawlessly. Zero downtime, clean data, and the store looked better than ever after the launch."</p>
+                    <p class="testi-quote">
+                      "We had 12,000+ products to migrate and Rejaul handled it
+                      flawlessly. Zero downtime, clean data, and the store
+                      looked better than ever after the launch."
+                    </p>
                     <div class="testi-author">
                       <div class="testi-avatar">A</div>
                       <div>
-                        <span class="testi-name">Anika R. <svg class="testi-badge" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#1D9BF0"/><path d="M17.5 8.5L10.5 15.5L7 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="testi-name"
+                          >Anika R.
+                          <svg
+                            class="testi-badge"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="12" fill="#1D9BF0" />
+                            <path
+                              d="M17.5 8.5L10.5 15.5L7 12"
+                              stroke="#fff"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                        ></span>
                         <span class="testi-country">🇦🇺 Australia</span>
                       </div>
                     </div>
@@ -321,11 +389,31 @@
 
                 <li class="splide__slide">
                   <div class="testi-card">
-                    <p class="testi-quote">"The landing page Rejaul built for us drove a 38% increase in lead conversions within the first month. His attention to detail and speed of delivery are exceptional."</p>
+                    <p class="testi-quote">
+                      "The landing page Rejaul built for us drove a 38% increase
+                      in lead conversions within the first month. His attention
+                      to detail and speed of delivery are exceptional."
+                    </p>
                     <div class="testi-author">
                       <div class="testi-avatar">T</div>
                       <div>
-                        <span class="testi-name">Tom W. <svg class="testi-badge" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#1D9BF0"/><path d="M17.5 8.5L10.5 15.5L7 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="testi-name"
+                          >Tom W.
+                          <svg
+                            class="testi-badge"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="12" fill="#1D9BF0" />
+                            <path
+                              d="M17.5 8.5L10.5 15.5L7 12"
+                              stroke="#fff"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                        ></span>
                         <span class="testi-country">🇨🇦 Canada</span>
                       </div>
                     </div>
@@ -334,17 +422,36 @@
 
                 <li class="splide__slide">
                   <div class="testi-card">
-                    <p class="testi-quote">"Rejaul is the best Shopify developer I've ever worked with. He communicates clearly, delivers on time, and the code quality is genuinely impressive. Will hire again."</p>
+                    <p class="testi-quote">
+                      "Rejaul is the best Shopify developer I've ever worked
+                      with. He communicates clearly, delivers on time, and the
+                      code quality is genuinely impressive. Will hire again."
+                    </p>
                     <div class="testi-author">
                       <div class="testi-avatar">L</div>
                       <div>
-                        <span class="testi-name">Lisa C. <svg class="testi-badge" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#1D9BF0"/><path d="M17.5 8.5L10.5 15.5L7 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="testi-name"
+                          >Lisa C.
+                          <svg
+                            class="testi-badge"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="12" fill="#1D9BF0" />
+                            <path
+                              d="M17.5 8.5L10.5 15.5L7 12"
+                              stroke="#fff"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                        ></span>
                         <span class="testi-country">🇩🇪 Germany</span>
                       </div>
                     </div>
                   </div>
                 </li>
-
               </ul>
             </div>
           </div>
@@ -373,13 +480,6 @@
                 target="_blank"
                 rel="noopener"
                 >LinkedIn</a
-              >
-              <span class="contact-sep">·</span>
-              <a
-                href="https://www.upwork.com/freelancers/rejaulkarim"
-                target="_blank"
-                rel="noopener"
-                >Upwork</a
               >
             </div>
           </div>
@@ -446,7 +546,6 @@
         <div class="footer-links">
           <a href="#about">About</a>
           <a href="#work">Work</a>
-          <a href="#contact">Contact</a>
           <a
             href="assets/resume/Rejaul-Karim-Resume.pdf"
             target="_blank"
