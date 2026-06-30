@@ -789,7 +789,9 @@ footer {
   position: relative;
   z-index: 1;
   max-width: min(90vw, 900px);
+  max-height: 85vh;
   width: 100%;
+  overflow-y: auto;
   transform: scale(0.94);
   transition: transform 0.25s ease;
 }
@@ -802,8 +804,6 @@ footer {
   width: 100%;
   border-radius: 8px;
   display: block;
-  max-height: 80vh;
-  object-fit: contain;
 }
 
 .lb-caption {
